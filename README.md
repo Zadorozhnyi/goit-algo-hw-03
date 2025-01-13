@@ -50,3 +50,53 @@ Enter the recursion level for the Koch snowflake:
 ## **Зразок для рівня 4:**
 
 ![image info](Snowflake_4_task_2.png)
+
+## Завдання 3
+
+### **Напишіть програму, яка виконує переміщення дисків з стрижня А на стрижень С, використовуючи стрижень В як допоміжний. Диски мають різний розмір і розміщені на початковому стрижні у порядку зменшення розміру зверху вниз.**
+
+#### **Правила:**
+
+1. За один крок можна перемістити тільки один диск.
+
+2. Диск можна класти тільки на більший диск або на порожній стрижень.
+
+Вхідними даними програми має бути число n — кількість дисків на початковому стрижні. Вихідними даними — логування послідовності кроків для переміщення дисків зі стрижня А на стрижень С.
+
+**Для запуску скрипту у терміналі:**
+```
+python task_3.py
+Enter the number of disks: 4
+Initial state: {'A': [4, 3, 2, 1], 'B': [], 'C': []}
+Move the disk from A on B: 1
+Intermediate state: {'A': [4, 3, 2], 'B': [1], 'C': []}
+Move the disk from A on C: 2
+Intermediate state: {'A': [4, 3], 'B': [1], 'C': [2]}
+Move the disk from B on C: 1
+Intermediate state: {'A': [4, 3], 'B': [], 'C': [2, 1]}
+Move the disk from A on B: 3
+Intermediate state: {'A': [4], 'B': [3], 'C': [2, 1]}
+Move the disk from C on A: 1
+Intermediate state: {'A': [4, 1], 'B': [3], 'C': [2]}
+Move the disk from C on B: 2
+Intermediate state: {'A': [4, 1], 'B': [3, 2], 'C': []}
+Move the disk from A on B: 1
+Intermediate state: {'A': [4], 'B': [3, 2, 1], 'C': []}
+Move the disk from A on C: 4
+Intermediate state: {'A': [], 'B': [3, 2, 1], 'C': [4]}
+Move the disk from B on C: 1
+Intermediate state: {'A': [], 'B': [3, 2], 'C': [4, 1]}
+Move the disk from B on A: 2
+Intermediate state: {'A': [2], 'B': [3], 'C': [4, 1]}
+Move the disk from C on A: 1
+Intermediate state: {'A': [2, 1], 'B': [3], 'C': [4]}
+Move the disk from B on C: 3
+Intermediate state: {'A': [2, 1], 'B': [], 'C': [4, 3]}
+Move the disk from A on B: 1
+Intermediate state: {'A': [2], 'B': [1], 'C': [4, 3]}
+Move the disk from A on C: 2
+Intermediate state: {'A': [], 'B': [1], 'C': [4, 3, 2]}
+Move the disk from B on C: 1
+Intermediate state: {'A': [], 'B': [], 'C': [4, 3, 2, 1]}
+Final state: {'A': [], 'B': [], 'C': [4, 3, 2, 1]}
+```
